@@ -5,6 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 type Props = { favoriteStatus: boolean; favoriteAction: () => void };
 
 export const Favorites = ({ favoriteStatus, favoriteAction }: Props) => {
-  if (favoriteStatus) return <FavoriteIcon />;
-  return <FavoriteBorderIcon />;
+  if (favoriteStatus) return <FavoriteIcon onClick={favoriteAction} />;
+
+  return <FavoriteBorderIcon onClick={favoriteAction} />;
 };
