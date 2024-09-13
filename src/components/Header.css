@@ -1,0 +1,60 @@
+.toolbar {
+  justify-content: space-between;
+}
+
+.pd-library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 146px;
+  height: 48px;
+  padding-right: 12px;
+}
+
+.pd-text {
+  width: 102px;
+  height: 42px;
+}
+
+.pd {
+  width: 102px;
+  height: 24px;
+  font-family: "Neue Haas Unica W1G", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.library {
+  width: 102px;
+  height: 18px;
+  font-family: "Neue Haas Unica W1G", sans-serif;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.img-container {
+  padding-top: 8px;
+  height: 32px;
+  width: 32px;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  background-color: #00609a;
+  border-radius: 8px;
+}
+
+.letter-user {
+  width: 14px;
+  height: 18px;
+  font-family: "Neue Haas Unica W1G", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 10px;
+}
