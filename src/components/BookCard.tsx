@@ -26,7 +26,7 @@ const BookCard = () => {
                   padding: "14px 28px 164px 28px",
                   position: "relative",
                   zIndex: 1,
-                  objectFit: "none",
+                  //   objectFit: "none",
                   width: "148px",
                   borderRadius: "8px",
                 }}

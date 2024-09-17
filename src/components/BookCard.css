@@ -19,11 +19,13 @@
 }
 
 .rating {
-  width: 97px;
+  width: 110px;
   height: 28px;
   padding: 2px 8px 2px 0px;
   display: flex;
   margin-bottom: 8px;
+  /* flex-direction: row; */
+  /* align-items: center; */
 }
 
 .star {
@@ -31,3 +33,36 @@
   width: 24px;
   margin-right: 6px;
 }
+
+.book-status {
+  width: 75px;
+  height: 18px;
+  margin-top: 12px;
+  border-radius: 8px;
+  /* position: fixed; */
+  position: absolute;
+  bottom: 0;
+  background-color: #f7fcf4;
+  /* background-color: #6bd230; */
+  padding: 5px 12px 5px 6px;
+  display: flex;
+}
+
+.css-1helft2-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+  border: 1px solid #cccccc;
+}
+
+.css-1helft2-MuiButtonBase-root-MuiIconButton-root {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* .css-r4ulxr:hover {
+  background-color: white;
+  color: white;
+}
+
+.css-mcf3og:hover {
+  background-color: white;
+  color: white;
+} */

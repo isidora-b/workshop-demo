@@ -8,7 +8,7 @@ import Vector from "../assets/Vector.png";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import BookCard from "./BookCard";
+import ReactiveCarousel from "./reactiveCarousel/ReactiveCarousel";
 
 export default function ButtonAppBar() {
   return (
@@ -75,7 +75,7 @@ export default function ButtonAppBar() {
           </Toolbar>
         </AppBar>
       </Box>
-      <BookCard />
+      <ReactiveCarousel></ReactiveCarousel>
     </>
   );
 }

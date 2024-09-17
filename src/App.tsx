@@ -16,7 +16,6 @@ function App() {
           <Route path="/About" element={<About />} />
         </Routes>
       </header>
-      {/* <Header /> */}
       <ToastContainer
         position="top-right"
         autoClose={1000}
