@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Book } from "./ReactiveCarousel";
 import { CardActionArea } from "@mui/material";
 import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
-import "../BookCard.css";
+import "./book.css";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import StarRateRoundedIcon from "@mui/icons-material/StarRateRounded";
 
@@ -23,13 +23,7 @@ export default function BookCard({ book }: BookProps) {
         boxShadow: "none",
       }}
     >
-      <CardActionArea
-        sx={
-          {
-            //   "&:hover": { backgroundColor: "white", opacity: 100 },
-          }
-        }
-      >
+      <CardActionArea>
         <div className="img-container-div">
           <div className="shadow-img"></div>
           <CardMedia
@@ -39,8 +33,6 @@ export default function BookCard({ book }: BookProps) {
             image={book.image_url}
             alt="book"
             sx={{
-              //   "&:hover": { backgroundColor: "white" },
-
               padding: "14px 28px 164px 28px",
               position: "relative",
               zIndex: 1,
@@ -81,7 +73,6 @@ export default function BookCard({ book }: BookProps) {
                   fontWeight={500}
                   color="black"
                   fontFamily="Neue Haas Unica W1G"
-                  //   marginTop="5px"
                 >
                   {book.rating}
                 </Typography>

@@ -4,11 +4,11 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import "./Header.css";
-import Vector from "../assets/Vector.png";
+import Vector from "../../assets/Vector.png";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import ReactiveCarousel from "./reactiveCarousel/ReactiveCarousel";
+import ReactiveCarousel from "../reactiveCarousel/ReactiveCarousel";
 
 export default function ButtonAppBar() {
   return (
