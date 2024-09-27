@@ -64,7 +64,7 @@ export default function BookCard({ book }: BookProps) {
             ) : (
               <>
                 <div className="star">
-                  <StarRateRoundedIcon sx={{ color: "#F3E110" }} />
+                  <StarRateRoundedIcon />
                 </div>
                 <Typography
                   component="div"
