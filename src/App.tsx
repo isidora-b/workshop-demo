@@ -4,7 +4,7 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 
 function App() {
   return (
@@ -16,7 +16,6 @@ function App() {
           <Route path="/About" element={<About />} />
         </Routes>
       </header>
-      {/* <Header /> */}
       <ToastContainer
         position="top-right"
         autoClose={1000}

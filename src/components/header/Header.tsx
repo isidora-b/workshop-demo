@@ -4,13 +4,62 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import "./Header.css";
-import Vector from "../assets/Vector.png";
+import Vector from "../../assets/Vector.png";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import BookCard from "./BookCard";
+import InboxIcon from "@mui/icons-material/Search";
+import MailIcon from "@mui/icons-material/Search";
+import menuIcon from "../../assets/menu.svg";
+
+import ReactiveCarousel from "../reactiveCarousel/ReactiveCarousel";
+import {
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Divider,
+  Button,
+  Drawer,
+} from "@mui/material";
 
 export default function ButtonAppBar() {
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setOpen(newOpen);
+  };
+
+  const DrawerList = (
+    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+      <List>
+        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {["All mail", "Trash", "Spam"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -72,10 +121,18 @@ export default function ButtonAppBar() {
             <div className="user">
               <div className="letter-user">M</div>
             </div>
+            <div style={{ display: "none" }}>
+              <Button onClick={toggleDrawer(true)}>
+                <img src={menuIcon} alt="" />
+              </Button>
+              <Drawer open={open} onClose={toggleDrawer(false)}>
+                {DrawerList}
+              </Drawer>
+            </div>
           </Toolbar>
         </AppBar>
       </Box>
-      <BookCard />
+      <ReactiveCarousel></ReactiveCarousel>
     </>
   );
 }

@@ -19,7 +19,7 @@
 }
 
 .rating {
-  width: 97px;
+  width: 110px;
   height: 28px;
   padding: 2px 8px 2px 0px;
   display: flex;
@@ -30,4 +30,26 @@
   height: 24px;
   width: 24px;
   margin-right: 6px;
+  color: #f3e110;
+}
+
+.book-status {
+  width: 75px;
+  height: 18px;
+  margin-top: 12px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  background-color: #f7fcf4;
+  padding: 5px 12px 5px 6px;
+  display: flex;
+}
+
+.css-1helft2-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+  border: 1px solid #cccccc;
+}
+
+.css-1helft2-MuiButtonBase-root-MuiIconButton-root {
+  border-width: 1px;
+  border-style: solid;
 }
